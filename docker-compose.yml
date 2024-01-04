@@ -8,7 +8,7 @@ services:
          POSTGRES_PASSWORD: ${DB_PASSWORD:-admin}
          PGDATA: /data/postgres
       volumes:
-        - ./.docker/postgress:/data/postgres
+        - ./.docker/postgres:/data/postgres
       ports:
         - "5432:5432"
       restart: unless-stopped
